@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src\\pages\\WeatherMain.jsx",
+        "scriptName": "WeatherMain.jsx",
+        "dependencies": [
+            "footer.jsx",
+            "utilities.js",
+            "spinner.jsx",
+            "app_backend.js"
+        ],
+        "local_dependent": [
+            "Footer",
+            "navigate",
+            "Spinner",
+            "db"
+        ]
+    }
+]
