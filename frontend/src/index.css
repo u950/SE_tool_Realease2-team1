@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e7dddd;
+    background-color: #f3ecec;
 }
 
 code {
@@ -13,8 +13,8 @@ code {
     monospace;
 }
 .App{
+  height: 100vh;
   text-align: center;
-  margin-top: 50px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ form {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  height: 90%;
+  height: 70%;
   width: 500px;
   max-width: 100%;
   margin: auto;
@@ -86,7 +86,7 @@ p{
   display: inline-block;
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  border-left-color: rgb(0, 255, 123);
+  border-left-color: rgb(0, 0, 0);
   height: 36px;
   width: 36px;
   animation: spin 1s ease infinite;
@@ -112,4 +112,9 @@ p{
   60% { transform: scale(1.05); }
   80% { transform: scale(0.95); }
   100% { transform: scale(1); }
+}
+
+.graph{
+  margin-left: '50px';
+  border-radius: 7cqh;
 }

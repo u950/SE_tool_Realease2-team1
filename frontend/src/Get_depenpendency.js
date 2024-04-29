@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import NetworkGraph from './graph';
+import Interactions from './graph_interactions';
 
 const DisplayGraph = () => {
     const { path_name } = useParams();
@@ -10,7 +10,7 @@ const DisplayGraph = () => {
     useEffect(() => {
         const fetchDependencies = async () => {
             try {
-                const response = await fetch('http://localhost:5000/get_dependencies', {
+                const response = await fetch('http://127.0.0.1:5000/get_dependencies', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -34,8 +34,8 @@ const DisplayGraph = () => {
 
     return (
         <div>
-            <h2>Dependencies for: {path_name}</h2>
-            {dependencies && <NetworkGraph data={dependencies} />}
+            <h2 style={{marginLeft: "500px"}}>Dependencies for: {path_name}</h2>
+            {dependencies && <Interactions data={dependencies} />}
         </div>
     );
 };

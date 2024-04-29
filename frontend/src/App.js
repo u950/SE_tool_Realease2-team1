@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom'
-
+import Graph from './graph'
 
 function App() {
   const [repoUrl, setRepoUrl] = useState("");
@@ -78,14 +78,7 @@ function App() {
       {message && <p>{message}</p>}
       <div className='fileList'>
         {files.length > 0 && (
-          <div>
-            <h2>Files in Repository:</h2>
-            <ul>
-              {files.map((file, index) => (
-                <li key={index}>{file}</li>
-              ))}
-            </ul>
-          </div>
+            <h3>Repository : '{path_name}'  Cloned Successfully</h3>
         )}
       </div>
        <div>
@@ -94,7 +87,6 @@ function App() {
             <button onClick={() => navigate(`/dependency/${path_name}`)}>
               View Dependencies
             </button>
-            console.log("path name ${path_name}")
           </div>
         )}
        </div>

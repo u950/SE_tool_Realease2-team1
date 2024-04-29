@@ -1,18 +1,793 @@
 [
     {
-        "filename": "src\\pages\\WeatherMain.jsx",
-        "scriptName": "WeatherMain.jsx",
+        "id": 0,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\template.js",
+        "label": "template.js",
+        "group": "",
+        "scriptName": "template.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 1,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\webpack.config.client.js",
+        "label": "webpack.config.client.js",
+        "group": "",
+        "scriptName": "webpack.config.client.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 2,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\webpack.config.client.production.js",
+        "label": "webpack.config.client.production.js",
+        "group": "",
+        "scriptName": "webpack.config.client.production.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 3,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\webpack.config.server.js",
+        "label": "webpack.config.server.js",
+        "group": "",
+        "scriptName": "webpack.config.server.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 4,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\App.js",
+        "label": "App.js",
+        "group": "client",
+        "scriptName": "client\\App.js",
         "dependencies": [
-            "footer.jsx",
-            "utilities.js",
-            "spinner.jsx",
-            "app_backend.js"
+            [
+                "./MainRouter.js",
+                6
+            ],
+            [
+                "./theme.js",
+                7
+            ]
         ],
         "local_dependent": [
-            "Footer",
-            "navigate",
-            "Spinner",
-            "db"
+            "MainRouter",
+            "theme"
         ]
+    },
+    {
+        "id": 5,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\main.js",
+        "label": "main.js",
+        "group": "client",
+        "scriptName": "client\\main.js",
+        "dependencies": [
+            [
+                "./App.js",
+                4
+            ]
+        ],
+        "local_dependent": [
+            "App"
+        ]
+    },
+    {
+        "id": 6,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\MainRouter.js",
+        "label": "MainRouter.js",
+        "group": "client",
+        "scriptName": "client\\MainRouter.js",
+        "dependencies": [
+            [
+                "./core/Home.js",
+                12
+            ],
+            [
+                "./user/Users.js",
+                29
+            ],
+            [
+                "./user/Signup.js",
+                28
+            ],
+            [
+                "./auth/Signin.js",
+                11
+            ],
+            [
+                "./user/EditProfile.js",
+                22
+            ],
+            [
+                "./user/Profile.js",
+                26
+            ],
+            [
+                "./auth/PrivateRoute.js",
+                10
+            ],
+            [
+                "./core/Menu.js",
+                13
+            ]
+        ],
+        "local_dependent": [
+            "Home",
+            "Users",
+            "Signup",
+            "Signin",
+            "EditProfile",
+            "Profile",
+            "PrivateRoute",
+            "Menu"
+        ]
+    },
+    {
+        "id": 7,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\theme.js",
+        "label": "theme.js",
+        "group": "client",
+        "scriptName": "client\\theme.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 8,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\auth\\api-auth.js",
+        "label": "api-auth.js",
+        "group": "client\\auth",
+        "scriptName": "client\\auth\\api-auth.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 9,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\auth\\auth-helper.js",
+        "label": "auth-helper.js",
+        "group": "client\\auth",
+        "scriptName": "client\\auth\\auth-helper.js",
+        "dependencies": [
+            [
+                "./api-auth.js",
+                8
+            ]
+        ],
+        "local_dependent": [
+            "signout"
+        ]
+    },
+    {
+        "id": 10,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\auth\\PrivateRoute.js",
+        "label": "PrivateRoute.js",
+        "group": "client\\auth",
+        "scriptName": "client\\auth\\PrivateRoute.js",
+        "dependencies": [
+            [
+                "./auth-helper.js",
+                9
+            ]
+        ],
+        "local_dependent": [
+            "auth"
+        ]
+    },
+    {
+        "id": 11,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\auth\\Signin.js",
+        "label": "Signin.js",
+        "group": "client\\auth",
+        "scriptName": "client\\auth\\Signin.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./api-auth.js",
+                8
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "signin"
+        ]
+    },
+    {
+        "id": 12,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\core\\Home.js",
+        "label": "Home.js",
+        "group": "client\\core",
+        "scriptName": "client\\core\\Home.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./../user/FindPeople.js",
+                23
+            ],
+            [
+                "./../post/Newsfeed.js",
+                17
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "FindPeople",
+            "Newsfeed"
+        ]
+    },
+    {
+        "id": 13,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\core\\Menu.js",
+        "label": "Menu.js",
+        "group": "client\\core",
+        "scriptName": "client\\core\\Menu.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ]
+        ],
+        "local_dependent": [
+            "auth"
+        ]
+    },
+    {
+        "id": 14,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\post\\api-post.js",
+        "label": "api-post.js",
+        "group": "client\\post",
+        "scriptName": "client\\post\\api-post.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 15,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\post\\Comments.js",
+        "label": "Comments.js",
+        "group": "client\\post",
+        "scriptName": "client\\post\\Comments.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./api-post.js",
+                14
+            ],
+            [
+                "./api-post.js",
+                14
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "comment",
+            "uncomment"
+        ]
+    },
+    {
+        "id": 16,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\post\\NewPost.js",
+        "label": "NewPost.js",
+        "group": "client\\post",
+        "scriptName": "client\\post\\NewPost.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./api-post.js",
+                14
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "create"
+        ]
+    },
+    {
+        "id": 17,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\post\\Newsfeed.js",
+        "label": "Newsfeed.js",
+        "group": "client\\post",
+        "scriptName": "client\\post\\Newsfeed.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./PostList.js",
+                19
+            ],
+            [
+                "./api-post.js",
+                14
+            ],
+            [
+                "./NewPost.js",
+                16
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "PostList",
+            "listNewsFeed",
+            "NewPost"
+        ]
+    },
+    {
+        "id": 18,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\post\\Post.js",
+        "label": "Post.js",
+        "group": "client\\post",
+        "scriptName": "client\\post\\Post.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./api-post.js",
+                14
+            ],
+            [
+                "./api-post.js",
+                14
+            ],
+            [
+                "./api-post.js",
+                14
+            ],
+            [
+                "./Comments.js",
+                15
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "remove",
+            "like",
+            "unlike",
+            "Comments"
+        ]
+    },
+    {
+        "id": 19,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\post\\PostList.js",
+        "label": "PostList.js",
+        "group": "client\\post",
+        "scriptName": "client\\post\\PostList.js",
+        "dependencies": [
+            [
+                "./Post.js",
+                18
+            ]
+        ],
+        "local_dependent": [
+            "Post"
+        ]
+    },
+    {
+        "id": 20,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\api-user.js",
+        "label": "api-user.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\api-user.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 21,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\DeleteUser.js",
+        "label": "DeleteUser.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\DeleteUser.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./api-user.js",
+                20
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "remove"
+        ]
+    },
+    {
+        "id": 22,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\EditProfile.js",
+        "label": "EditProfile.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\EditProfile.js",
+        "dependencies": [
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./api-user.js",
+                20
+            ],
+            [
+                "./api-user.js",
+                20
+            ]
+        ],
+        "local_dependent": [
+            "auth",
+            "read",
+            "update"
+        ]
+    },
+    {
+        "id": 23,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\FindPeople.js",
+        "label": "FindPeople.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\FindPeople.js",
+        "dependencies": [
+            [
+                "./api-user.js",
+                20
+            ],
+            [
+                "./api-user.js",
+                20
+            ],
+            [
+                "./../auth/auth-helper.js",
+                9
+            ]
+        ],
+        "local_dependent": [
+            "findPeople",
+            "follow",
+            "auth"
+        ]
+    },
+    {
+        "id": 24,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\FollowGrid.js",
+        "label": "FollowGrid.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\FollowGrid.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 25,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\FollowProfileButton.js",
+        "label": "FollowProfileButton.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\FollowProfileButton.js",
+        "dependencies": [
+            [
+                "./api-user.js",
+                20
+            ],
+            [
+                "./api-user.js",
+                20
+            ]
+        ],
+        "local_dependent": [
+            "unfollow",
+            "follow"
+        ]
+    },
+    {
+        "id": 26,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\Profile.js",
+        "label": "Profile.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\Profile.js",
+        "dependencies": [
+            [
+                "./DeleteUser.js",
+                21
+            ],
+            [
+                "./../auth/auth-helper.js",
+                9
+            ],
+            [
+                "./api-user.js",
+                20
+            ],
+            [
+                "./../user/FollowProfileButton.js",
+                25
+            ],
+            [
+                "./../user/ProfileTabs.js",
+                27
+            ],
+            [
+                "./../post/api-post.js",
+                14
+            ]
+        ],
+        "local_dependent": [
+            "DeleteUser",
+            "auth",
+            "read",
+            "FollowProfileButton",
+            "ProfileTabs",
+            "listByUser"
+        ]
+    },
+    {
+        "id": 27,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\ProfileTabs.js",
+        "label": "ProfileTabs.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\ProfileTabs.js",
+        "dependencies": [
+            [
+                "./../user/FollowGrid.js",
+                24
+            ],
+            [
+                "./../post/PostList.js",
+                19
+            ]
+        ],
+        "local_dependent": [
+            "FollowGrid",
+            "PostList"
+        ]
+    },
+    {
+        "id": 28,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\Signup.js",
+        "label": "Signup.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\Signup.js",
+        "dependencies": [
+            [
+                "./api-user.js",
+                20
+            ]
+        ],
+        "local_dependent": [
+            "create"
+        ]
+    },
+    {
+        "id": 29,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\client\\user\\Users.js",
+        "label": "Users.js",
+        "group": "client\\user",
+        "scriptName": "client\\user\\Users.js",
+        "dependencies": [
+            [
+                "./api-user.js",
+                20
+            ]
+        ],
+        "local_dependent": [
+            "list"
+        ]
+    },
+    {
+        "id": 30,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\config\\config.js",
+        "label": "config.js",
+        "group": "config",
+        "scriptName": "config\\config.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 31,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\devBundle.js",
+        "label": "devBundle.js",
+        "group": "server",
+        "scriptName": "server\\devBundle.js",
+        "dependencies": [
+            [
+                "./../config/config.js",
+                30
+            ],
+            [
+                "./../webpack.config.client.js",
+                1
+            ]
+        ],
+        "local_dependent": [
+            "config",
+            "webpackConfig"
+        ]
+    },
+    {
+        "id": 32,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\express.js",
+        "label": "express.js",
+        "group": "server",
+        "scriptName": "server\\express.js",
+        "dependencies": [
+            [
+                "./../template.js",
+                0
+            ],
+            [
+                "./routes/user.routes.js",
+                42
+            ],
+            [
+                "./routes/auth.routes.js",
+                40
+            ],
+            [
+                "./routes/post.routes.js",
+                41
+            ],
+            [
+                "./../client/MainRouter.js",
+                6
+            ],
+            [
+                "./../client/theme.js",
+                7
+            ],
+            [
+                "./devBundle.js",
+                31
+            ]
+        ],
+        "local_dependent": [
+            "Template",
+            "userRoutes",
+            "authRoutes",
+            "postRoutes",
+            "MainRouter",
+            "theme",
+            "devBundle"
+        ]
+    },
+    {
+        "id": 33,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\server.js",
+        "label": "server.js",
+        "group": "server",
+        "scriptName": "server\\server.js",
+        "dependencies": [
+            [
+                "./../config/config.js",
+                30
+            ],
+            [
+                "./express.js",
+                32
+            ]
+        ],
+        "local_dependent": [
+            "config",
+            "app"
+        ]
+    },
+    {
+        "id": 34,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\controllers\\auth.controller.js",
+        "label": "auth.controller.js",
+        "group": "server\\controllers",
+        "scriptName": "server\\controllers\\auth.controller.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 35,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\controllers\\post.controller.js",
+        "label": "post.controller.js",
+        "group": "server\\controllers",
+        "scriptName": "server\\controllers\\post.controller.js",
+        "dependencies": [
+            [
+                "../models/post.model.js",
+                38
+            ],
+            [
+                "./../helpers/dbErrorHandler.js",
+                37
+            ]
+        ],
+        "local_dependent": [
+            "Post",
+            "errorHandler"
+        ]
+    },
+    {
+        "id": 36,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\controllers\\user.controller.js",
+        "label": "user.controller.js",
+        "group": "server\\controllers",
+        "scriptName": "server\\controllers\\user.controller.js",
+        "dependencies": [
+            [
+                "../models/user.model.js",
+                39
+            ],
+            [
+                "./../helpers/dbErrorHandler.js",
+                37
+            ]
+        ],
+        "local_dependent": [
+            "User",
+            "errorHandler"
+        ]
+    },
+    {
+        "id": 37,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\helpers\\dbErrorHandler.js",
+        "label": "dbErrorHandler.js",
+        "group": "server\\helpers",
+        "scriptName": "server\\helpers\\dbErrorHandler.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 38,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\models\\post.model.js",
+        "label": "post.model.js",
+        "group": "server\\models",
+        "scriptName": "server\\models\\post.model.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 39,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\models\\user.model.js",
+        "label": "user.model.js",
+        "group": "server\\models",
+        "scriptName": "server\\models\\user.model.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 40,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\routes\\auth.routes.js",
+        "label": "auth.routes.js",
+        "group": "server\\routes",
+        "scriptName": "server\\routes\\auth.routes.js",
+        "dependencies": [
+            [
+                "../controllers/auth.controller.js",
+                34
+            ]
+        ],
+        "local_dependent": [
+            "authCtrl"
+        ]
+    },
+    {
+        "id": 41,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\routes\\post.routes.js",
+        "label": "post.routes.js",
+        "group": "server\\routes",
+        "scriptName": "server\\routes\\post.routes.js",
+        "dependencies": [],
+        "local_dependent": []
+    },
+    {
+        "id": 42,
+        "exactPath": "/Users/apgur/Desktop/project-tool/mern-social\\server\\routes\\user.routes.js",
+        "label": "user.routes.js",
+        "group": "server\\routes",
+        "scriptName": "server\\routes\\user.routes.js",
+        "dependencies": [],
+        "local_dependent": []
     }
 ]

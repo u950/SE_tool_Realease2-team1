@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
@@ -38,9 +39,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "css-loader": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-complexity": "^1.0.2",
     "sass": "^1.74.1",
     "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4"
+  },
+  "resolve": {
+    "fallback": {
+      "path": false,
+      "fs": false,
+      "assert": false,
+      "util": false
+    }
   }
 }

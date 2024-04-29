@@ -1,0 +1,51 @@
+[
+  {
+    "filePath": "<text>",
+    "messages": [
+      {
+        "ruleId": null,
+        "fatal": true,
+        "severity": 2,
+        "message": "Parsing error: Unexpected token, expected \",\" (51:29)",
+        "line": 51,
+        "column": 29,
+        "nodeType": null
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n// Sample JavaScript code with potential issues\n\nfunction calculateArea(radius) {\n  // Missing semicolon at the end of the line\n  const area = Math.PI * radius ** 2; // Incorrect use of exponential operator, should be Math.pow(radius, 2)\n  return area;\n}\n\n// Unused variable\nconst unusedVariable = 'This variable is unused';\n\n// Function with overly complex logic\nfunction checkPrime(n) {\n  for (let i = 2; i < n; i++) {\n    if (n % i === 0) {\n      return false;\n    }\n  }\n  return n > 1;\n}\n\n// Function with inconsistent naming convention\nfunction calculate_area_rectangle(length, width) {\n  return length * width;\n}\n\n// Usage of undefined variable\nconsole.log(nonExistentVariable);\n\n// Function with missing return statement\nfunction greet(name) {\n  console.log('Hello, ' + name);\n}\n\n// Function with unnecessary nested conditional\nfunction isPositiveNumber(num) {\n  if (typeof num === 'number') {\n    if (num > 0) {\n      return true;\n    } else {\n      return false;\n    }\n  } else {\n    return false;\n  }\n}\n\ncalculateArea();\ncheckPrime(\ncalculate_area_rectangle(5, );\ngreet('John');\nisPositiveNumber(-);\n\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "dot-location",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "new-parens",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-new-object",
+        "replacedBy": [
+          "no-object-constructor"
+        ]
+      },
+      {
+        "ruleId": "no-whitespace-before-property",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "rest-spread-spacing",
+        "replacedBy": []
+      }
+    ]
+  }
+]

@@ -2,10 +2,11 @@ from tree_sitter import Language, Parser
 import tree_sitter_javascript as tsjs
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
+from server import tokenizer, model
 
-# Load tokenizer and model
-tokenizer = AutoTokenizer.from_pretrained("SEBIS/code_trans_t5_large_code_documentation_generation_javascript_multitask_finetune", skip_special_tokens=True)
-model = AutoModelForSeq2SeqLM.from_pretrained("SEBIS/code_trans_t5_large_code_documentation_generation_javascript_multitask_finetune").to('cuda' if torch.cuda.is_available() else 'cpu')
+# # # Load tokenizer and model
+# tokenizer = AutoTokenizer.from_pretrained("SEBIS/code_trans_t5_large_code_documentation_generation_javascript_multitask_finetune", skip_special_tokens=True)
+# model = AutoModelForSeq2SeqLM.from_pretrained("SEBIS/code_trans_t5_large_code_documentation_generation_javascript_multitask_finetune").to('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Define a function for batch processing
 def batch_process_code(code_list, batch_size=8):

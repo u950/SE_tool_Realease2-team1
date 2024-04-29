@@ -6,8 +6,14 @@ import shutil
 from main import CodeSnippetExtractor
 from Dependency_extract import DependencyExtractor
 
+
+
+
+
 app = Flask(__name__)
 CORS(app)    #this will enable cors for alla routes
+
+dependencies_json = []
 
 @app.route('/')
 def home():
@@ -63,11 +69,30 @@ def dependecies_function():
     if not directory:
         return jsonify({"error": "Directory not provided"}),400
     try:
-        analyse = CodeSnippetExtractor(directory)
-        dependencies_json = analyse.get_list()
+        analyse = DependencyExtractor(directory)
+        analyse.run_extraction()
+        dependencies_json = analyse.return_dependencies()
         print(dependencies_json)
         return dependencies_json
     except Exception as e:
         print("error loading dependency : ",e)
+
+
+
+
+@app.route('/node_clicked', methods=['POST'])
+def node_clicked():
+    try:
+        clicked_node = request.json
+        
+        # Process the clicked node data here
+        clicked_node_id = clicked_node[0]['id']
+        
+        print("clicked on :",clicked_node_id)
+        # Return a response if needed
+        return jsonify({"message": "Node data received successfully ","show":clicked_node})
+    except Exception as e:
+        return str(e), 500
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
