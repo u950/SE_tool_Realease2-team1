@@ -4,4 +4,5 @@ A tool for visualizing MERN stack git repository like a dependency graph
 
 colured nodes represent that they belong to same directory <br>
 edged depicts the relation between the two script file <br>
-works for only javascript. 
+works for only javascript. <br>
+The graph is very interactive in nature howering on egde displays related information
