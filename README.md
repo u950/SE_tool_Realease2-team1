@@ -7,5 +7,5 @@ edged depicts the relation between the two script file <br>
 works for only javascript. <br>
 The graph is very interactive in nature howering on egde displays related information
 
-## Use in your machine
+# Use in your machine
 git clone repository and run `rpm start`
